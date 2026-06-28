@@ -34,11 +34,12 @@
 .gold-metallic-text {
   background: linear-gradient(
     135deg,
-    #b38728 0%,
-    #fbf5b7 25%,
-    #da1b60 50%,
-    #fbf5b7 75%,
-    #aa771c 100%
+    #9a701e 0%,
+    #fbf5b7 20%,
+    #e5a93c 40%,
+    #ffeb99 60%,
+    #e5a93c 80%,
+    #9a701e 100%
   );
   background-size: 200% auto;
   color: transparent;
