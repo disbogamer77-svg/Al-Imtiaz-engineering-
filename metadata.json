@@ -1,0 +1,6 @@
+{
+  "name": "Al Imtiaz General Contracting",
+  "description": "Digital identity for Al Imtiaz General Contracting (شركة الامتياز للمقاولات العامة), a premium engineering, construction, and general contracting firm.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

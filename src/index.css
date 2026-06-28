@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0f121a;
+    color: #f3f4f6;
+  }
+}
+
+/* Stunning Custom Scrollbar - Agency Grade */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f121a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #1f2335, #a87932);
+  border-radius: 5px;
+  border: 2px solid #0f121a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #a87932, #ffda85);
+}
+
+/* Metallic Shimmering Gold Gradient */
+.gold-metallic-text {
+  background: linear-gradient(
+    135deg,
+    #b38728 0%,
+    #fbf5b7 25%,
+    #da1b60 50%,
+    #fbf5b7 75%,
+    #aa771c 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shineGold 6s linear infinite;
+}
+
+@keyframes shineGold {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+/* Premium Blueprint Grids with real architectural depth */
+.blueprint-grid-fine {
+  background-size: 16px 16px;
+  background-image: 
+    linear-gradient(to right, rgba(229, 169, 60, 0.012) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(229, 169, 60, 0.012) 1px, transparent 1px);
+}
+
+.blueprint-grid-major {
+  background-size: 80px 80px;
+  background-image: 
+    linear-gradient(to right, rgba(229, 169, 60, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(229, 169, 60, 0.03) 1px, transparent 1px);
+}
+
+/* High-tech technical lines & draft corners */
+.blueprint-bracket::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid rgba(229, 169, 60, 0.4);
+  border-left: 2px solid rgba(229, 169, 60, 0.4);
+}
+
+.blueprint-bracket::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-bottom: 2px solid rgba(229, 169, 60, 0.4);
+  border-right: 2px solid rgba(229, 169, 60, 0.4);
+}
+
+/* Deluxe Glass Card with Golden Rim */
+.glass-gold-card {
+  background: linear-gradient(135deg, rgba(28, 33, 46, 0.7) 0%, rgba(18, 22, 32, 0.85) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 169, 60, 0.15);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-gold-card:hover {
+  border-color: rgba(229, 169, 60, 0.45);
+  box-shadow: 
+    0 10px 40px rgba(229, 169, 60, 0.1),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Ambient Moving Studio Lighting */
+.ambient-glow-yellow {
+  filter: blur(140px);
+  background: radial-gradient(circle, rgba(229, 169, 60, 0.08) 0%, transparent 70%);
+  animation: floatAmbient 12s ease-in-out infinite alternate;
+}
+
+.ambient-glow-bronze {
+  filter: blur(140px);
+  background: radial-gradient(circle, rgba(144, 101, 31, 0.06) 0%, transparent 70%);
+  animation: floatAmbient 16s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floatAmbient {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(10%, 15%) scale(1.15); }
+}
+
+/* Premium Metallic Button Sweep */
+.btn-gold-metallic {
+  background: linear-gradient(135deg, #e5a93c 0%, #ffda85 50%, #b38728 100%);
+  color: #0f121a;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  border: 1px solid #ffda85;
+  box-shadow: 0 4px 14px rgba(229, 169, 60, 0.25);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-gold-metallic:hover {
+  box-shadow: 0 6px 20px rgba(229, 169, 60, 0.4);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.btn-gold-metallic::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -150%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4) 30%,
+    transparent
+  );
+  transform: rotate(30deg);
+  transition: none;
+}
+
+.btn-gold-metallic:hover::after {
+  left: 150%;
+  transition: all 0.8s ease-in-out;
+}
+
+/* Luxury Card Spotlight Tracking Effect */
+.card-spotlight {
+  position: relative;
+}
+
+.card-spotlight::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(to bottom, rgba(229, 169, 60, 0.15), transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Fine tech line dashes */
+.tech-dashed-line {
+  background-image: linear-gradient(90deg, rgba(229, 169, 60, 0.1) 60%, transparent 40%);
+  background-size: 10px 1px;
+  height: 1px;
+  width: 100%;
+}
