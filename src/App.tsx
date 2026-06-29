@@ -476,7 +476,7 @@ Please contact me as soon as possible to proceed.`;
   const activeDict = dict[lang];
 
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-[#0f121a] text-[#F3F4F6] relative blueprint-grid-fine selection:bg-[#E5A93C] selection:text-black">
+    <div className="min-h-screen flex flex-col font-sans bg-[#0f121a] text-[#F3F4F6] relative blueprint-grid-fine selection:bg-[#E5A93C] selection:text-black overflow-x-hidden">
       
       {/* Luxurious Technical Layout Layer */}
       <div className="absolute inset-0 pointer-events-none z-0 blueprint-grid-major opacity-30"></div>
